@@ -1,0 +1,29 @@
+I posted tweet by two method 1st I downloade python library "python-tweeter",
+After downloding and installing It I got error pointing that there is no module name "oAuth".
+First things comes to our mind is .. What is OAuth ???
+It is nothing but a Open Authentication protocol which is being widely adopted .
+To name few Yahoo and Twitter require OAuth autentication to use it’s services . 
+Say you have a twitter account . There is another website X which wants to access your tweets .
+Then the website X should know your login credentials . In order to over come this OAuth was introduced .
+With OAuth the website X can be authorized and it can access the twitter account with the access token given to it.
+The advantage is private information can be accessed by other applications without knowing the password and with only access token.
+I also installed oauth,simplejson and httplib to avoid further errors
+1) Now to begin with we first need to create Application Key. I Visited this website http://dev.twitter.com/apps/new
+  and creted a app with name "Amitesh_twit " and then I got these information there
+	API Key-9uya1BgKAEJr7JHS1PgirA
+	consumer key-9uya1BgKAEJr7JHS1PgirA
+	consumer secret-3fakoGCco3Y0BMbLGbedlhlp5FL5eTDWellwmpI57u8
+	Request token URL-https://api.twitter.com/oauth/request_token
+	Access token URL-https://api.twitter.com/oauth/access_token
+	Authorize URL-https://api.twitter.com/oauth/authorize
+2)I also install parallelly I install library Tweepy,as it was too complicated to get Access token key,Access token secret.
+  I used twitter_api.py file attached to get key and secret.
+3)After I running this file I went to url mantioned on terminal "Please authorize: 
+  http://api.twitter.com/oauth/authorize?oauth_token=hqggysIf57nme9i3Y6vSkPi3UPNkORJyDse6GSW5Fgg there I got a standred oAuth Twitter connection screen,
+  I allowed myself to connect to account.Then twitter provided my a pin that authenticates the connection between the client app my Twitter account.
+4)I posted the pin mantioned there on python shell and then I got 
+   access_token_key='241804566-h5jVW2k4pWdlb9vdaUOhVUc5SvylQsSTceANNXaA',
+   access_token_secret='QhpQw3rDx3N6npzAIc8wnsbTvNKIfJKXhh4FKSfSj8'
+   Then I created a file first.py (attached) using Consumer Key,Consumer Secret,Access token and Access token Secret.
+5) finally got my First tweet with python.
+You can have a look to my satus on http://twitter.com/amiteshmahesh.
